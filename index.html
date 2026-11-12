@@ -1,0 +1,1669 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+
+  <title>Hermosa Medical Center | Dermatology, Dental & Wellness in Sharjah</title>
+  <meta name="description" content="Discover dermatology, laser, beauty, dentistry and physiotherapy at Hermosa Medical Center in Muwaileh, Sharjah. Explore services and book an appointment.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hermosa.ae/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #080808;
+      --white: #ffffff;
+      --ink: #171717;
+      --body: #414141;
+      --muted: #707070;
+      --line: #e5e5e5;
+      --soft: #f5f5f5;
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "Manrope", Arial, sans-serif;
+      --container: 1300px;
+      --gap: 20px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--container));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .19em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(42px, 5.2vw, 68px);
+      font-weight: 600;
+      letter-spacing: -.035em;
+      line-height: .98;
+    }
+
+    .section-intro {
+      max-width: 570px;
+      margin: 22px 0 0;
+      color: var(--body);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 24px;
+      border: 1px solid var(--black);
+      background: var(--black);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-align: center;
+      text-transform: uppercase;
+      transition: background .25s ease, color .25s ease, transform .25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #333;
+    }
+
+    .button--outline {
+      border-color: #bdbdbd;
+      background: transparent;
+      color: var(--black);
+    }
+
+    .button--outline:hover {
+      border-color: var(--black);
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .button--light {
+      border-color: var(--white);
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .button--light:hover { background: #e8e8e8; }
+
+    .arrow { font-size: 18px; }
+
+    /* Top announcement and navigation */
+
+    .topline {
+      padding: 9px 20px;
+      background: var(--black);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .site-header {
+      position: sticky;
+      z-index: 50;
+      top: 0;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      min-height: 86px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .brand-name {
+      font-family: var(--serif);
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: .025em;
+    }
+
+    .brand-subtitle {
+      margin-top: 7px;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .25em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(16px, 2.3vw, 32px);
+    }
+
+    .main-nav a {
+      color: #303030;
+      font-size: 12px;
+      font-weight: 700;
+      transition: color .2s ease;
+    }
+
+    .main-nav a:hover { color: #888; }
+
+    .nav-cta {
+      min-height: 46px;
+      padding: 12px 18px;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--line);
+      background: var(--white);
+      color: var(--black);
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero { overflow: hidden; background: var(--soft); }
+
+    .hero-grid {
+      display: grid;
+      min-height: 660px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 90px 8% 90px max(10px, calc((100vw - var(--container)) / 2));
+    }
+
+    .hero h1 {
+      max-width: 680px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(58px, 6.6vw, 88px);
+      font-weight: 600;
+      letter-spacing: -.045em;
+      line-height: .91;
+    }
+
+    .hero h1 em { font-weight: 500; }
+
+    .hero-description {
+      max-width: 490px;
+      margin: 28px 0 0;
+      color: #505050;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 42px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .06em;
+    }
+
+    .hero-note span {
+      width: 34px;
+      height: 1px;
+      background: #999;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 580px;
+      overflow: hidden;
+      background: #d8d8d8;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 580px;
+      object-fit: cover;
+      object-position: center;
+      filter: grayscale(100%);
+    }
+
+    .hero-visual::after {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,.08), transparent 40%),
+                  linear-gradient(0deg, rgba(0,0,0,.18), transparent 55%);
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-stamp {
+      position: absolute;
+      z-index: 2;
+      right: 34px;
+      bottom: 34px;
+      display: grid;
+      width: 130px;
+      height: 130px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.8);
+      border-radius: 50%;
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 21px;
+      line-height: 1.1;
+      text-align: center;
+    }
+
+    /* Intro strip */
+
+    .intro-strip { border-bottom: 1px solid var(--line); }
+
+    .intro-strip-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .intro-point {
+      display: flex;
+      min-height: 112px;
+      align-items: center;
+      gap: 18px;
+      padding: 20px 28px;
+      border-right: 1px solid var(--line);
+    }
+
+    .intro-point:first-child { padding-left: 0; }
+    .intro-point:last-child { border-right: 0; }
+
+    .intro-number {
+      color: #a0a0a0;
+      font-family: var(--serif);
+      font-size: 35px;
+      line-height: 1;
+    }
+
+    .intro-point strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .intro-point small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* About */
+
+    .about { padding: 130px 0; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      align-items: center;
+      gap: 9%;
+    }
+
+    .about-image {
+      position: relative;
+      min-height: 520px;
+      background: #dedede;
+    }
+
+    .about-image img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
+    .image-caption {
+      position: absolute;
+      right: -25px;
+      bottom: 30px;
+      max-width: 230px;
+      padding: 22px 25px;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .about-copy { padding: 20px 0; }
+
+    .about-copy p {
+      max-width: 590px;
+      margin: 24px 0 0;
+      color: var(--body);
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .about-copy .button { margin-top: 30px; }
+
+    /* Services */
+
+    .services {
+      padding: 120px 0 130px;
+      background: var(--soft);
+    }
+
+    .services-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 55px;
+    }
+
+    .services-top .section-intro { margin-bottom: 4px; }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--gap);
+    }
+
+    .service-card {
+      position: relative;
+      display: flex;
+      min-height: 300px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px;
+      border: 1px solid #dedede;
+      background: var(--white);
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--black);
+    }
+
+    .service-icon {
+      display: grid;
+      width: 58px;
+      height: 58px;
+      place-items: center;
+      margin-bottom: 34px;
+      border: 1px solid #dedede;
+      border-radius: 50%;
+    }
+
+    .service-icon svg {
+      width: 27px;
+      height: 27px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-index {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      color: #b5b5b5;
+      font-family: var(--serif);
+      font-size: 22px;
+    }
+
+    .service-card h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 31px;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+
+    .service-card p {
+      margin: 12px 0 24px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: auto;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .service-link span {
+      font-size: 17px;
+      transition: transform .2s ease;
+    }
+
+    .service-card:hover .service-link span {
+      transform: translateX(5px);
+    }
+
+    /* Statement */
+
+    .statement {
+      padding: 110px 20px;
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .statement .eyebrow {
+      justify-content: center;
+      color: #aaa;
+    }
+
+    .statement h2 {
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: var(--serif);
+      font-size: clamp(42px, 6vw, 76px);
+      font-weight: 500;
+      letter-spacing: -.025em;
+      line-height: 1.02;
+    }
+
+    .statement p {
+      max-width: 570px;
+      margin: 25px auto 0;
+      color: #c2c2c2;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    /* People behind your care */
+
+    .doctors { padding: 125px 0; }
+
+    .doctors-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--gap);
+    }
+
+    .doctor-card {
+      min-width: 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .doctor-photo {
+      position: relative;
+      display: flex;
+      height: 340px;
+      align-items: flex-end;
+      justify-content: center;
+      overflow: hidden;
+      background: #f0f0f0;
+    }
+
+    .doctor-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center bottom;
+      padding: 12px 10px 0;
+      filter: grayscale(100%);
+      transition: transform .45s ease, filter .45s ease;
+    }
+
+    .doctor-card:hover .doctor-photo img {
+      transform: scale(1.035);
+      filter: grayscale(0%);
+    }
+
+    .doctor-photo::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 25%;
+      background: linear-gradient(transparent, rgba(0,0,0,.06));
+      content: "";
+      pointer-events: none;
+    }
+
+    .doctor-info { padding: 22px 0 25px; }
+
+    .doctor-info h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    .doctor-role {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    .doctor-info p {
+      margin: 13px 0 0;
+      color: var(--body);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* Booking */
+
+    .booking {
+      padding: 110px 0;
+      background: var(--soft);
+    }
+
+    .booking-panel {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      background: var(--white);
+    }
+
+    .booking-copy { padding: clamp(35px, 6vw, 78px); }
+
+    .booking-copy h2 {
+      max-width: 590px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(44px, 5vw, 66px);
+      font-weight: 600;
+      letter-spacing: -.035em;
+      line-height: .98;
+    }
+
+    .booking-copy p {
+      max-width: 470px;
+      margin: 22px 0 0;
+      color: var(--body);
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .booking-copy .button { margin-top: 30px; }
+
+    .booking-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .detail-row {
+      padding: 20px 0;
+      border-bottom: 1px solid #393939;
+    }
+
+    .detail-row:first-child { padding-top: 0; }
+    .detail-row:last-child { border-bottom: 0; }
+
+    .detail-label {
+      display: block;
+      margin-bottom: 7px;
+      color: #aaa;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    .detail-value {
+      font-size: 16px;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-value a:hover { color: #bdbdbd; }
+
+    /* FAQ */
+
+    .faq { padding: 120px 0; }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 10%;
+    }
+
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+
+    .faq-question {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0;
+      border: 0;
+      background: transparent;
+      color: var(--black);
+      font-size: 15px;
+      font-weight: 800;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .faq-question span:last-child {
+      font-size: 22px;
+      font-weight: 400;
+      transition: transform .2s ease;
+    }
+
+    .faq-question[aria-expanded="true"] span:last-child {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      max-width: 650px;
+      padding: 0 35px 22px 0;
+      color: var(--body);
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    .faq-answer.is-open { display: block; }
+
+    /* Footer */
+
+    .site-footer {
+      padding: 75px 0 30px;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .8fr;
+      gap: 60px;
+      padding-bottom: 65px;
+    }
+
+    .footer-brand .brand-name { font-size: 43px; }
+
+    .footer-brand p {
+      max-width: 350px;
+      margin: 20px 0 0;
+      color: #bdbdbd;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .footer-column h3 {
+      margin: 0 0 20px;
+      color: #999;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    .footer-column a,
+    .footer-column p {
+      display: block;
+      margin: 0 0 12px;
+      color: #e5e5e5;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .footer-column a:hover { color: #999; }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 25px;
+      border-top: 1px solid #343434;
+      color: #999;
+      font-size: 11px;
+    }
+
+    .footer-bottom a { color: #ddd; }
+
+    /* Fixed mobile actions */
+
+    .mobile-cta {
+      position: fixed;
+      z-index: 100;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+      border-top: 1px solid #ddd;
+      background: rgba(255,255,255,.97);
+      box-shadow: 0 -5px 25px rgba(0,0,0,.08);
+      backdrop-filter: blur(12px);
+    }
+
+    .mobile-cta a {
+      display: flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 8px;
+      background: var(--black);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .mobile-cta a:first-child {
+      border: 1px solid var(--black);
+      background: var(--white);
+      color: var(--black);
+    }
+
+    :focus-visible {
+      outline: 3px solid #777;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 1050px) {
+      .main-nav { gap: 15px; }
+      .main-nav a { font-size: 11px; }
+      .nav-cta { padding-inline: 13px; }
+      .hero-grid { min-height: 590px; }
+      .hero-copy { padding-left: 30px; }
+      .hero h1 { font-size: clamp(56px, 7vw, 76px); }
+      .doctor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 800px) {
+      .nav-wrap { min-height: 76px; }
+      .menu-toggle { display: block; }
+      .nav-cta { display: none; }
+
+      .main-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 22px 20px;
+        border-bottom: 1px solid var(--line);
+        background: var(--white);
+      }
+
+      .main-nav.is-open { display: flex; }
+
+      .main-nav a {
+        padding: 13px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 13px;
+      }
+
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-copy { padding: 85px 30px 65px; }
+      .hero-visual { min-height: 430px; }
+      .hero-visual img { min-height: 430px; }
+
+      .intro-strip-inner { grid-template-columns: 1fr; }
+
+      .intro-point {
+        min-height: 85px;
+        padding: 16px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .intro-point:last-child { border-bottom: 0; }
+
+      .about { padding: 90px 0; }
+      .about-grid { grid-template-columns: 1fr; gap: 55px; }
+      .about-image { min-height: 430px; margin-right: 18px; }
+
+      .services { padding: 90px 0; }
+
+      .services-top,
+      .doctors-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .service-card { min-height: 290px; padding: 24px; }
+
+      .booking { padding: 80px 0; }
+      .booking-panel { grid-template-columns: 1fr; }
+      .booking-details { padding: 38px; }
+
+      .faq { padding: 90px 0; }
+      .faq-grid { grid-template-columns: 1fr; gap: 45px; }
+
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 540px) {
+      .container { width: calc(100% - 36px); }
+      .topline { font-size: 9px; letter-spacing: .08em; }
+      .brand-name { font-size: 31px; }
+
+      .hero-copy { padding: 70px 20px 55px; }
+      .hero h1 { font-size: clamp(52px, 15vw, 68px); }
+      .hero-description { font-size: 15px; }
+      .hero-actions { width: 100%; }
+      .hero-actions .button { width: 100%; }
+      .hero-visual { min-height: 350px; }
+      .hero-visual img { min-height: 350px; }
+
+      .hero-stamp {
+        right: 18px;
+        bottom: 18px;
+        width: 100px;
+        height: 100px;
+        font-size: 17px;
+      }
+
+      .about { padding: 75px 0; }
+      .about-image { min-height: 340px; }
+
+      .image-caption {
+        right: -12px;
+        bottom: 18px;
+        max-width: 185px;
+        padding: 17px;
+        font-size: 20px;
+      }
+
+      .services { padding: 75px 0; }
+      .service-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 260px; }
+
+      .statement { padding: 80px 20px; }
+      .doctors { padding: 80px 0; }
+
+      .doctor-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .doctor-photo { height: 245px; }
+      .doctor-info h3 { font-size: 22px; }
+      .doctor-info p { font-size: 12px; }
+
+      .booking-copy { padding: 35px 25px; }
+      .booking-details { padding: 32px 25px; }
+
+      .faq { padding: 80px 0; }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+      }
+
+      .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .mobile-cta { display: grid; }
+      body { padding-bottom: 78px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Hermosa Medical Center",
+    "url": "https://hermosa.ae/",
+    "telephone": "+97165355507",
+    "email": "info@hermosa.ae",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Muwaileh, Sharjah",
+      "addressCountry": "AE"
+    },
+    "medicalSpecialty": [
+      "Dermatology",
+      "Dentistry",
+      "Physical Therapy"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="topline">
+    Multidisciplinary care · Muwaileh, Sharjah
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="#home" aria-label="Hermosa Medical Center home">
+        <span class="brand-name">HERMOSA</span>
+        <span class="brand-subtitle">Medical Center</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Our Services</a>
+        <a href="#doctors">Our Doctors</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="button nav-cta" href="https://hermosa.ae/booking/">
+        Book an Appointment <span class="arrow">↗</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mainNav">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-grid">
+
+        <div class="hero-copy">
+          <p class="eyebrow">Care for your health and well-being</p>
+
+          <h1>Feel confident in your <em>care.</em></h1>
+
+          <p class="hero-description">
+            Discover a considered approach to dermatology, dentistry,
+            laser treatments, beauty and physiotherapy at Hermosa Medical
+            Center in Muwaileh, Sharjah.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="https://hermosa.ae/booking/">
+              Book an Appointment <span class="arrow">↗</span>
+            </a>
+
+            <a class="button button--outline" href="#services">
+              Explore Our Services
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span></span>
+            A range of care, in one center
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=85"
+            alt="Healthcare professional in a clinical setting"
+            fetchpriority="high">
+          <div class="hero-stamp">
+            Your well-being<br>comes first
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUICK VALUE POINTS -->
+    <section class="intro-strip" aria-label="Center overview">
+      <div class="container intro-strip-inner">
+
+        <div class="intro-point">
+          <span class="intro-number">01</span>
+          <div>
+            <strong>Multiple Departments</strong>
+            <small>Different care needs, one center</small>
+          </div>
+        </div>
+
+        <div class="intro-point">
+          <span class="intro-number">02</span>
+          <div>
+            <strong>Listed Medical Practitioners</strong>
+            <small>Meet the professionals behind your care</small>
+          </div>
+        </div>
+
+        <div class="intro-point">
+          <span class="intro-number">03</span>
+          <div>
+            <strong>Convenient Booking</strong>
+            <small>Arrange your appointment online</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1000&q=85"
+            alt="Healthcare consultation"
+            loading="lazy">
+          <div class="image-caption">
+            Care shaped around your needs.
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow">Welcome to Hermosa</p>
+
+          <h2 class="section-heading">
+            A more considered approach to everyday well-being.
+          </h2>
+
+          <p>
+            Hermosa Medical Center is a multidisciplinary center in
+            Muwaileh, Sharjah, bringing together medical, dental,
+            aesthetic and rehabilitation services.
+          </p>
+
+          <p>
+            From dermatology and laser treatments to dentistry and
+            physiotherapy, our departments provide different ways to
+            support your health and well-being. Explore the services
+            available and choose the department that best matches your
+            needs.
+          </p>
+
+          <a class="button button--outline" href="https://hermosa.ae/about/">
+            Discover Hermosa <span class="arrow">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="services-top">
+          <div>
+            <p class="eyebrow">Explore our departments</p>
+            <h2 class="section-heading">Care across different needs.</h2>
+          </div>
+
+          <p class="section-intro">
+            Find the department that fits your needs. Explore the available
+            services and learn more before arranging your visit.
+          </p>
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card">
+            <span class="service-index">01</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M16 4c-5 0-9 4-9 9 0 3 1 5 3 7 2 2 3 4 3 7h6c0-3 1-5 3-7 2-2 3-4 3-7 0-5-4-9-9-9Z"/>
+                <path d="M12 13c1-2 3-3 5-3M11 18c1 1 2 2 4 2M20 14l2 2"/>
+              </svg>
+            </div>
+            <h3>Dermatology</h3>
+            <p>Explore skin-focused care and aesthetic dermatology services.</p>
+            <a class="service-link" href="https://hermosa.ae/dermatology/">
+              Explore Dermatology <span>→</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-index">02</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M5 9h10l4 4-4 4H5z"/>
+                <path d="m19 13 8-5M20 17l7 2M19 21l6 6"/>
+                <path d="M8 12h5M8 15h3"/>
+              </svg>
+            </div>
+            <h3>Laser Treatments</h3>
+            <p>Discover laser hair removal and other listed laser services.</p>
+            <a class="service-link" href="https://hermosa.ae/laser/">
+              Explore Laser <span>→</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-index">03</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M16 4c-2 5-5 8-10 10 5 2 8 5 10 10 2-5 5-8 10-10-5-2-8-5-10-10Z"/>
+                <path d="M25 4v6M22 7h6M6 22v6M3 25h6"/>
+              </svg>
+            </div>
+            <h3>Beauty &amp; Skin Care</h3>
+            <p>Explore beauty and skin-focused treatments available at the center.</p>
+            <a class="service-link" href="https://hermosa.ae/beauty/">
+              Explore Beauty <span>→</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-index">04</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M10 5c-3 0-5 3-5 7 0 5 3 8 4 12 1 3 2 5 4 5 2 0 2-4 3-7 0-1 1-1 1 0 1 3 1 7 3 7s3-2 4-5c1-4 4-8 4-12 0-4-2-7-5-7-3 0-4 2-7 2s-4-2-6-2Z"/>
+              </svg>
+            </div>
+            <h3>Dentistry</h3>
+            <p>Find general, cosmetic, pediatric and other dental services.</p>
+            <a class="service-link" href="https://hermosa.ae/dentistry/">
+              Explore Dentistry <span>→</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-index">05</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <circle cx="16" cy="5.5" r="2.5"/>
+                <path d="m13 11 3 4 4-2M16 15l-4 6-5 2M16 15l5 5 4 1M12 21l-1 7M21 20l2 8"/>
+              </svg>
+            </div>
+            <h3>Physiotherapy</h3>
+            <p>Explore rehabilitation, manual therapy and movement-based care.</p>
+            <a class="service-link" href="https://hermosa.ae/physiotherapy/">
+              Explore Physiotherapy <span>→</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-index">06</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M16 27V14"/>
+                <path d="M16 17C8 17 5 12 6 6c6-1 11 2 10 11Z"/>
+                <path d="M16 21c0-7 4-11 10-10 1 6-3 10-10 10Z"/>
+              </svg>
+            </div>
+            <h3>Nutrition &amp; Slimming</h3>
+            <p>Find out more about the nutrition and slimming services listed by the center.</p>
+            <a class="service-link" href="https://hermosa.ae/about/">
+              Learn More <span>→</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND STATEMENT -->
+    <section class="statement">
+      <p class="eyebrow">The Hermosa approach</p>
+
+      <h2>
+        Care begins with understanding what matters to you.
+      </h2>
+
+      <p>
+        Our aim is to listen, understand individual needs and support
+        patient well-being through the services available at our center.
+      </p>
+    </section>
+
+    <!-- PEOPLE BEHIND YOUR CARE -->
+    <section class="doctors" id="doctors">
+      <div class="container">
+
+        <div class="doctors-header">
+          <div>
+            <p class="eyebrow">Meet the practitioners</p>
+            <h2 class="section-heading">People behind your care.</h2>
+            <p class="section-intro">
+              Get to know the practitioners listed by Hermosa Medical Center
+              and the departments they work in.
+            </p>
+          </div>
+
+          <a class="button button--outline" href="https://hermosa.ae/services/">
+            View Practitioner Details <span class="arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="doctor-grid">
+
+          <!-- Practitioner 1: Official Hermosa portrait -->
+          <article class="doctor-card">
+            <div class="doctor-photo">
+              <img
+                src="https://i0.wp.com/hermosa.ae/wp-content/uploads/2023/10/dr-mouhamad-new.png?fit=586%2C886&ssl=1"
+                alt="Dr. Mohammed Haj Ahmed, dermatology, laser and aesthetic specialist at Hermosa Medical Center"
+                loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="doctor-info">
+              <h3>Dr. Mohammed Haj Ahmed</h3>
+              <span class="doctor-role">
+                Dermatology, Laser &amp; Aesthetic Specialist
+              </span>
+              <p>
+                Listed with a clinical medical doctorate in dermatology,
+                laser and aesthetic medicine, and an American diploma
+                in aesthetic medicine.
+              </p>
+            </div>
+          </article>
+
+          <!-- Practitioner 2: Official Hermosa portrait -->
+          <article class="doctor-card">
+            <div class="doctor-photo">
+              <img
+                src="https://i0.wp.com/hermosa.ae/wp-content/uploads/2023/10/drAhmad-new.png?fit=610%2C949&ssl=1"
+                alt="Dr. Ahmed Elegndy, general dentist at Hermosa Medical Center"
+                loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="doctor-info">
+              <h3>Dr. Ahmed Elegndy</h3>
+              <span class="doctor-role">General Dentist</span>
+              <p>
+                Listed with a Doctor of Dental Surgery qualification and
+                interests across general, pediatric and cosmetic dentistry.
+              </p>
+            </div>
+          </article>
+
+          <!-- Practitioner 3: Official Hermosa portrait -->
+          <article class="doctor-card">
+            <div class="doctor-photo">
+              <img
+                src="https://i0.wp.com/hermosa.ae/wp-content/uploads/2025/03/male.png?fit=771%2C1006&ssl=1"
+                alt="Mohamed Elzin, physiotherapist at Hermosa Medical Center"
+                loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="doctor-info">
+              <h3>Mohamed Elzin</h3>
+              <span class="doctor-role">Physiotherapist</span>
+              <p>
+                Listed with a bachelor's degree in physiotherapy and
+                rehabilitation, with a focus on individual treatment plans,
+                manual therapy and therapeutic exercise.
+              </p>
+            </div>
+          </article>
+
+          <!-- Practitioner 4: Official Hermosa portrait -->
+          <article class="doctor-card">
+            <div class="doctor-photo">
+              <img
+                src="https://i0.wp.com/hermosa.ae/wp-content/uploads/2025/03/new1.png?fit=643%2C930&ssl=1"
+                alt="Dr. Nour Al Madhoun, general dentist at Hermosa Medical Center"
+                loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="doctor-info">
+              <h3>Dr. Nour Al Madhoun</h3>
+              <span class="doctor-role">General Dentist</span>
+              <p>
+                Listed with a Doctor of Dental Surgery qualification and
+                interests across general, pediatric and cosmetic dentistry.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking" id="contact">
+      <div class="container">
+
+        <div class="booking-panel">
+
+          <div class="booking-copy">
+            <p class="eyebrow">Take the next step</p>
+
+            <h2>Let's find the right way forward.</h2>
+
+            <p>
+              Ready to arrange a visit? Use the Hermosa online booking page
+              to submit your appointment request, or contact the center
+              directly for assistance.
+            </p>
+
+            <a class="button" href="https://hermosa.ae/booking/">
+              Request an Appointment <span class="arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="booking-details">
+
+            <div class="detail-row">
+              <span class="detail-label">Visit Us</span>
+              <div class="detail-value">
+                Muwaileh, Sharjah, United Arab Emirates
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <span class="detail-label">Call the Center</span>
+              <div class="detail-value">
+                <a href="tel:+97165355507">+971 6 535 5507</a>
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <span class="detail-label">Email</span>
+              <div class="detail-value">
+                <a href="mailto:info@hermosa.ae">info@hermosa.ae</a>
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <span class="detail-label">Online Booking</span>
+              <div class="detail-value">
+                <a href="https://hermosa.ae/booking/">
+                  Visit the booking page ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container faq-grid">
+
+        <div>
+          <p class="eyebrow">Helpful information</p>
+          <h2 class="section-heading">
+            A few things to know before you visit.
+          </h2>
+          <p class="section-intro">
+            Find basic information about the center, its departments and
+            how to arrange an appointment.
+          </p>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="true" aria-controls="faq1">
+              <span>Where is Hermosa Medical Center located?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer is-open" id="faq1">
+              Hermosa Medical Center is located in Muwaileh, Sharjah,
+              United Arab Emirates.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+              <span>Which departments are available?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq2">
+              The center lists dermatology, laser, beauty, dentistry and
+              physiotherapy. Its about information also refers to nutrition
+              and slimming services.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+              <span>How can I arrange an appointment?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq3">
+              You can visit the official booking page to submit an
+              appointment request or contact the center by phone.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+              <span>How can I contact Hermosa?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq4">
+              Call +971 6 535 5507 or email info@hermosa.ae for general
+              enquiries.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-name">HERMOSA</span>
+            <span class="brand-subtitle">Medical Center</span>
+          </a>
+
+          <p>
+            A multidisciplinary medical center in Muwaileh, Sharjah,
+            bringing together dermatology, laser, beauty, dentistry and
+            physiotherapy services.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#about">About Hermosa</a>
+          <a href="#services">Our Services</a>
+          <a href="#doctors">Our Practitioners</a>
+          <a href="https://hermosa.ae/booking/">Book an Appointment</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <a href="tel:+97165355507">+971 6 535 5507</a>
+          <a href="mailto:info@hermosa.ae">info@hermosa.ae</a>
+          <p>Muwaileh, Sharjah<br>United Arab Emirates</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © <span id="year"></span> Hermosa Medical Center. All rights reserved.
+        </span>
+        <a href="https://hermosa.ae/">Official Website</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Exactly two mobile sticky actions -->
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a href="tel:+97165355507">Call the Center</a>
+    <a href="https://hermosa.ae/booking/">Book Appointment</a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("is-open");
+
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question").forEach((button) => {
+      button.addEventListener("click", () => {
+        const answer = document.getElementById(
+          button.getAttribute("aria-controls")
+        );
+
+        const isExpanded =
+          button.getAttribute("aria-expanded") === "true";
+
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        answer.classList.toggle("is-open", !isExpanded);
+      });
+    });
+
+    // Current year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
